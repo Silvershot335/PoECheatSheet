@@ -26,24 +26,65 @@
     color:  rgb(0, 0, 0);
 
  }
+    .btn {
+  /* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* create a small space when buttons wrap on 2 lines */
+  margin: 2px 0;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  border-radius: 2px;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 0.5em 1em;
+
+  /* make sure colors have enough contrast! */
+  color: #ffffff;
+  background-color: #9555af;
+}
+    .btn:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+
+    .btn:hover,
+    .btn:focus {
+  color: #9555af;
+  border-color: currentColor;
+  background-color: white;
+}
+
+
+.btn {
+  /* ... */
+  /* all browsers: remove the default outline since
+      we are rolling our own focus styles */
+  outline: none;
+
     </style>
 </head>
 <body>
-            <h1>This is the help page</h1>
+            <h1>This is the Help page.</h1>
             
-        </head><!-- <img src="https://web.poecdn.com/image/layout/blight-bg.jpg?1568172500905" alt="poe icon"> -->
-    
-    <p>Help Help Help</p>
+        </head>
+    <p>If you would like to help, please contact me or join me in through the link below.</p>
     
    
     </body>
 
+    <a href="https://discord.gg/Uwscv9c">
+    <div class="btn">Discord</div>
+    </a>
     
     <a href= "./test.html">
-    <button> 
+    <div class="btn">
         
-        <img src="./images/item.png" alt="flask">
-    </button></a>
+       Next
+  </div> </a>
 </body>
 
 </html>
