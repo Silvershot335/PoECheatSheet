@@ -24,7 +24,9 @@ button:active {
   filter: saturate(150%);
 }
 
-button:hover,
+button:hover{
+  cursor: pointer;
+}
 button:focus {
   color: #9555af;
   border-color: currentColor;
