@@ -4,21 +4,28 @@
   left: 0;
   background-color: rgb(99, 99, 99);
   right: 0;
-  height: 3vh;
+  min-height: 3vh;
 }
 
+.navbarthing {
+  background-color: rgba(53, 0, 58, 0.664);
+  min-height: 3vh;
+  color: rgb(255, 255, 255);
+  padding-bottom:.7vh;
+  padding-top: 1.5vh;
+}
 /* 
- <div class="navbar">
 
-    PoECheetSheat
+  <div class="navbar">
 
-    <a href="./index.html">
-      <button> Home </button></a>
-    <a href="./lab.html">
-      <button>Lab</button></a>
-    <a href="./leveling.html">
-      <button>Leveling</button></a>
-    <a href="./help.html">
-      <button> Help Me </button></a>
+    <span class="navbarthing">
+      PoECheatSheet
+    </span>
+
+
+    <button onclick="location.href='./index.html'"> Home</button>
+    <button onclick="location.href='./lab.html'">Lab</button>
+    <button onclick="location.href='./leveling.html'">Leveling</button>
+    <button onclick="location.href='./help.html'"> Help Me </button>
   </div>
 */

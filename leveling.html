@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/table.css">
+    <link rel="stylesheet" href="./styles/lab.css">
+    <meta charset="utf-8">
+    <title>Leveling</title>
 
     <style>
         body {
@@ -14,51 +17,40 @@
             margin-top: 4vh;
         }
 
-        .content {
-            background: transparent;
-            border: 15px solid rgba(32, 32, 32, 0);
-            padding-left: 4vw;
-            margin-left: 20vw;
-            text-align: center;
-            font-size: 25px;
-            padding-top: 5px;
-            width: 50vw;
-            height: 100vh;
-
-        }
-
         .image {
             margin-left: 0;
         }
 
         table,
         th,
-        td{
+        td {
             background-color: rgba(104, 104, 104, 0.24);
         }
+
+        .tablebackground,
+        .tablebackground>*:not(caption) {
+            background-color: rgba(86, 111, 145, 0.418) !important;
+        }
     </style>
+
+
 </head>
 
 <body>
     <div class="navbar">
 
-        PoECheatSheet
-
-
-        <a href="./index.html">
-            <button> Home </button></a>
-        <a href="./lab.html">
-            <button>Lab</button></a>
-        <a href="./leveling.html">
-            <button>Leveling</button></a>
-        <a href="./help.html">
-            <button> Help Me </button></a>
-
+        <span class="navbarthing">
+            PoECheatSheet
+        </span>
+        <button onclick="location.href='./index.html'"> Home</button>
+        <button onclick="location.href='./lab.html'">Lab</button>
+        <button onclick="location.href='./leveling.html'">Leveling</button>
+        <button onclick="location.href='./help.html'"> Help Me </button>
     </div>
 
-    <div class="content">
+    <div class="box">
 
-        <img src="./images/leveling.png">
+        <img src="./images/leveling.png" alt="leveling">
 
         <p>Leveling a large part of your Path of Exile experience. Here are some resources for many of the important
             moments.</p>
@@ -66,165 +58,166 @@
         <br>
         <br>
 
-        <table style="width:50%">
-            <table align="center">
-                <caption>Passive Point Rewards</caption>
+        <table class="center">
+            <caption>Passive Point Rewards</caption>
 
-                <tr>
-                    <td>The Dweller of the Deep</td>
-                    <td>Act 1</td>
+            <tr>
+                <td>The Dweller of the Deep</td>
+                <td>Act 1</td>
 
-                </tr>
-                <tr>
-                    <td>The Marooned Mariner</td>
-                    <td>Act 1</td>
+            </tr>
+            <tr>
+                <td>The Marooned Mariner</td>
+                <td>Act 1</td>
 
-                </tr>
-                <tr>
-                    <td>The Way Forward</td>
-                    <td>Act 1</td>
+            </tr>
+            <tr>
+                <td>The Way Forward</td>
+                <td>Act 1</td>
 
-                </tr>
-                <tr>
-                    <td>Deal With the Bandits</td>
-                    <td>Act 2</td>
+            </tr>
+            <tr>
+                <td>Deal With the Bandits</td>
+                <td>Act 2</td>
 
-                </tr>
-                <tr>
-                    <td>Victario's Secrets</td>
-                    <td>Act 3</td>
+            </tr>
+            <tr>
+                <td>Victario's Secrets</td>
+                <td>Act 3</td>
 
-                </tr>
-                <tr>
-                    <td>Piety's Pets</td>
-                    <td>Act 3</td>
-                </tr>
+            </tr>
+            <tr>
+                <td>Piety's Pets</td>
+                <td>Act 3</td>
+            </tr>
 
-                <tr>
-                    <td>An Indomitable Spirit</td>
-                    <td>Act 4</td>
+            <tr>
+                <td>An Indomitable Spirit</td>
+                <td>Act 4</td>
 
-                </tr>
-                <tr>
-                    <td>In Service to Science</td>
-                    <td>Act 5</td>
+            </tr>
+            <tr>
+                <td>In Service to Science</td>
+                <td>Act 5</td>
 
-                </tr>
-                <tr>
-                    <td>Kitava's Torments</td>
-                    <td>Act 5</td>
+            </tr>
+            <tr>
+                <td>Kitava's Torments</td>
+                <td>Act 5</td>
 
-                </tr>
-                <tr>
-                    <td>The Father of War</td>
-                    <td>Act 6</td>
+            </tr>
+            <tr>
+                <td>The Father of War</td>
+                <td>Act 6</td>
 
-                </tr>
-                <tr>
-                    <td>The Puppet Mistress</td>
-                    <td>Act 6</td>
+            </tr>
+            <tr>
+                <td>The Puppet Mistress</td>
+                <td>Act 6</td>
 
-                </tr>
-                <tr>
-                    <td>The Cloven One</td>
-                    <td>Act 6</td>
-                </tr>
-                <tr>
-                    <td>The Master of a Million Faces</td>
-                    <td>Act 7</td>
+            </tr>
+            <tr>
+                <td>The Cloven One</td>
+                <td>Act 6</td>
+            </tr>
+            <tr>
+                <td>The Master of a Million Faces</td>
+                <td>Act 7</td>
 
-                </tr>
-                <tr>
-                    <td>Queen of Despair</td>
-                    <td>Act 7</td>
+            </tr>
+            <tr>
+                <td>Queen of Despair</td>
+                <td>Act 7</td>
 
-                </tr>
-                <tr>
-                    <td>Kihsra's Star</td>
-                    <td>Act 7</td>
+            </tr>
+            <tr>
+                <td>Kihsra's Star</td>
+                <td>Act 7</td>
 
-                </tr>
-                <tr>
-                    <td>Love is Dead</td>
-                    <td>Act 8</td>
+            </tr>
+            <tr>
+                <td>Love is Dead</td>
+                <td>Act 8</td>
 
-                </tr>
-                <tr>
-                    <td>Reflection of Terror</td>
-                    <td>Act 8</td>
+            </tr>
+            <tr>
+                <td>Reflection of Terror</td>
+                <td>Act 8</td>
 
-                </tr>
-                <tr>
-                    <td>The Gemling Legion</td>
-                    <td>Act 8</td>
-                </tr>
+            </tr>
+            <tr>
+                <td>The Gemling Legion</td>
+                <td>Act 8</td>
+            </tr>
 
-                <tr>
-                    <td>Queen of the Sands</td>
-                    <td>Act 9</td>
+            <tr>
+                <td>Queen of the Sands</td>
+                <td>Act 9</td>
 
-                </tr>
-                <tr>
-                    <td>The Ruler of Highgate</td>
-                    <td>Act 9</td>
+            </tr>
+            <tr>
+                <td>The Ruler of Highgate</td>
+                <td>Act 9</td>
 
-                </tr>
-                <tr>
-                    <td>Vilenta's Vengeance</td>
-                    <td>Act 10</td>
+            </tr>
+            <tr>
+                <td>Vilenta's Vengeance</td>
+                <td>Act 10</td>
 
-                </tr>
-                <tr>
-                    <td>An End to Hunger</td>
-                    <td>Act 10</td>
-            </table>
-
-            <br>
-            </br>
-
-            <p>Remember upon killing Kitava you will lose 30% resistance each time; totaling 60% negative resistance
-                after Act 10.</p>
-
-            <br>
-            </br>
-
-            <table style="width:50%">
-                <table align="center">
-                    <caption>Vendor Recipes</caption>
-
-                    <tr>
-                        <td>10% Movespeed Boots</td>
-                        <td>White Boots; Quicksilver; Augmentation</td>
-
-                    </tr>
-                    <tr>
-                        <td>+5% Movespeed Boots</td>
-                        <td>x% Movespeed Boots; Quicklsilver; Augmentation</td>
-
-                    </tr>
-                    <tr>
-                        <td>+# Added Damage to Spells</td>
-                        <td>Caster Weapon; Resistance Ring; Alteration</td>
-
-                    </tr>
-                    <tr>
-                        <td>+% Spell Damage</td>
-                        <td>Caster Weapon; Chain Belt; Whetstone</td>
-
-                    </tr>
-                    <tr>
-                        <td>+1 Minion Helmet</td>
-                        <td>Magic Helmet; Life Flask of Animation; Alteration</td>
-
-                    </tr>
-                    <tr>
-                        <td>+% Physical Damage</td>
-                        <td>Weapon; Rustic Sash; Whetstone</td>
-                    </tr>
-                </table>
+            </tr>
+            <tr>
+                <td>An End to Hunger</td>
+                <td>Act 10</td>
+        </table>
 
 
+        <br>
+
+        <p>Remember upon killing Kitava you will lose 30% resistance each time; totaling 60% negative resistance
+            after Act 10.</p>
+
+        <br>
+
+
+
+
+
+        <table class="tablebackground center">
+
+            <caption>Vendor Recipes</caption>
+
+            <tr>
+                <td>10% Movespeed Boots</td>
+                <td>White Boots; Quicksilver; Augmentation</td>
+
+            </tr>
+            <tr>
+                <td>+5% Movespeed Boots</td>
+                <td>x% Movespeed Boots; Quicklsilver; Augmentation</td>
+
+            </tr>
+            <tr>
+                <td>+# Added Damage to Spells</td>
+                <td>Caster Weapon; Resistance Ring; Alteration</td>
+
+            </tr>
+            <tr>
+                <td>+% Spell Damage</td>
+                <td>Caster Weapon; Chain Belt; Whetstone</td>
+
+            </tr>
+            <tr>
+                <td>+1 Minion Helmet</td>
+                <td>Magic Helmet; Life Flask of Animation; Alteration</td>
+
+            </tr>
+            <tr>
+                <td>+% Physical Damage</td>
+                <td>Weapon; Rustic Sash; Whetstone</td>
+            </tr>
+        </table>
     </div>
+
 </body>
 
 </html>
