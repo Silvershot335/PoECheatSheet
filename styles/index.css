@@ -1,41 +1,39 @@
 /* This is bad- Don't Use It. */
 
 body {
-    text-align: center;
-    background: url("https://web.poecdn.com/image/layout/blight-bg.jpg?1568172500905");
-    color: rgb(18, 21, 230);
-    font-weight: bold;
-    font-size: 68;
-  }
+  text-align: center;
+  background: url("https://web.poecdn.com/image/layout/blight-bg.jpg?1568172500905");
+  color: rgb(18, 21, 230);
+  font-weight: bold;
+  font-size: 68;
+}
 
-  div {
-    filter: saturate(150%);
-    background: transparent;
-    width: 300px;
-    border: 15px solid rgba(0, 128, 0, 0);
-    padding: 50px;
-    margin-left: 0px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    padding-top: 10px;
+div {
+  filter: saturate(150%);
+  background: transparent;
+  width: 300px;
+  border: 15px solid rgba(0, 128, 0, 0);
+  padding: 50px;
+  margin-left: 0px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 10px;
+}
 
-  }
+.hed {
+  color: rgb(86, 218, 241);
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
 
-  .hed {
-    color: rgb(86, 218, 241);
-    font-weight: bold;
-    font-size: 50px;
-    text-align: center;
-  }
+p.thick {
+  font-weight: bold;
+}
 
-
-  p.thick {
-    font-weight: bold
-  }
-
-  p {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-  }
+p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}

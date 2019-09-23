@@ -1,8 +1,24 @@
 .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: rgb(99, 99, 99);
-            right: 0;
-            height: 3vh;
-        }
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(99, 99, 99);
+  right: 0;
+  height: 3vh;
+}
+
+/* 
+ <div class="navbar">
+
+    PoECheetSheat
+
+    <a href="./index.html">
+      <button> Home </button></a>
+    <a href="./lab.html">
+      <button>Lab</button></a>
+    <a href="./leveling.html">
+      <button>Leveling</button></a>
+    <a href="./help.html">
+      <button> Help Me </button></a>
+  </div>
+*/
