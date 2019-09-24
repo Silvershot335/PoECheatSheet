@@ -2,19 +2,45 @@
 <html lang="en">
 
 <head>
-    <title>Betrayal</title>
+    <title>Syndicate</title>
     <link rel="stylesheet" href="./styles/lab.css">
     <link rel="stylesheet" href="./styles/button.css">
-    <link rel="stylesheet" href="./styles/table.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <meta charset="utf-8">
 
     <style>
-    
-    .tabletest {
-        background-color: white;
-    }
+        table,
+        th,
+        td {
+            border: 1px solid rgb(255, 255, 255);
+            background-color: rgba(109, 50, 23, 0.507);
+            border-collapse: collapse;
+        }
 
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        table#t01 tr:nth-child(even) {
+            background-color: rgba(48, 48, 48, 0.425);
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: rgba(196, 196, 196, 0.671);
+        }
+
+        table#t01 th {
+            background-color: rgb(109, 50, 32);
+            color: white;
+        }
     </style>
 
 </head>
@@ -36,25 +62,32 @@
 
     <div class="box">
 
-        <table class="center">
+
+        <img src="./images/syndicate.png">
+        <p>
+
+            <br>
+
+        </p>
+        <table id="t01" class="center">
             <tr>
-                <td>Agent</td>
-                <td>Transportation</td>
-                <td>Fortification</td>
-                <td>Research</td>
-                <td>Intervention</td>
+                <th>Agent</td>
+                <th>Transportation</td>
+                <th>Fortification</td>
+                <th>Research</td>
+                <th>Intervention</td>
             </tr>
-            
+
             <tr>
-                <td>Aisling</td>
+                <th>Aisling</th>
                 <td>Veiled Weapons</td>
                 <td>Veiled Armor</td>
                 <td>Add Veiled Mod</td>
-                <td>Veiled Jewelerry</td>
+                <td>Veiled Jewelry</td>
             </tr>
-            
+
             <tr>
-                <td>Cameria</td>
+                <th>Cameria</th>
                 <td>Timeworn Item</td>
                 <td>Harbinger Orb</td>
                 <td>Sextants</td>
@@ -62,69 +95,69 @@
             </tr>
 
             <tr>
-                <td>Elreon</td>
+                <th>Elreon</th>
                 <td>Unique Weapons</td>
                 <td>Unique Armor</td>
-                <td>Unique Jewellery</td>
+                <td>Unique Jewelry</td>
                 <td>Reliquary Scarab</td>
 
             </tr>
-            
+
             <tr>
-                <td>Gravicius</td>
+                <th>Gravicius</th>
                 <td>Complete Div Set</td>
                 <td>Random Div Cards</td>
                 <td>Swap Div Cards</td>
                 <td>Div Card Scarabs</td>
 
             </tr>
-            
+
             <tr>
-                <td>Guff</td>
+                <th>Guff</th>
                 <td>Chaos Crafting</td>
                 <td>Essence Crafting</td>
                 <td>Annul/Exalt Crafting</td>
                 <td>Alteration Crafting</td>
 
             </tr>
-            
+
             <tr>
-                <td>Haku</td>
+                <th>Haku</th>
                 <td>Rare Items</td>
                 <td>Strongbox</td>
                 <td>Qualitied Rare Items</td>
                 <td>Strongbox Scarabs</td>
 
             </tr>
-            
+
             <tr>
-                <td>Hillock</td>
+                <th>Hillock</th>
                 <td>Weapon Quality</td>
                 <td>Armor Quality</td>
                 <td>Flask Quality</td>
                 <td>Map Quality</td>
 
             </tr>
-            
+
             <tr>
-                <td>It that Fled</td>
+                <th>It that Fled</th>
                 <td>Breach Splinters</td>
                 <td>Abyss Jewels</td>
                 <td>Upgrade Breachstones</td>
                 <td>Breach Scarabs</td>
 
             </tr>
-            
+
             <tr>
-                <td>Janus</td>
+                <th>Janus</th>
                 <td>Quality Currency</td>
                 <td>Currency Shards</td>
                 <td>Perandus & Coins</td>
                 <td>Perandus Scarabs</td>
 
             </tr>
-             <tr>
-                <td>Jorgin</td>
+            <tr>
+                <th>Jorgin</th>
                 <td>Transportation</td>
                 <td>Fortification</td>
                 <td>Research</td>
@@ -132,26 +165,26 @@
 
             </tr>
             <tr>
-                <td>Korell</td>
+                <th>Korell</th>
                 <td>Essences</td>
                 <td>Map Fragments</td>
                 <td>Fossils</td>
                 <td>Elder Scarabs</td>
 
             </tr>
-            
+
             <tr>
-                <td>Leo</td>
+                <th>Leo</th>
                 <td>Silver Coins</td>
                 <td>Random Currency</td>
                 <td>Use Currency</td>
                 <td>Torment Scarabs</td>
 
             </tr>
-            
-            
+
+
             <tr>
-                <td>Riker</td>
+                <th>Riker</th>
                 <td>Take One Currency</td>
                 <td>Take One Unique</td>
                 <td>Take One Veiled Rare</td>
@@ -160,7 +193,7 @@
             </tr>
 
             <tr>
-                <td>Rin</td>
+                <th>Rin</th>
                 <td>Guiding Map Locations</td>
                 <td>Rare Maps</td>
                 <td>Unique Maps</td>
@@ -169,7 +202,7 @@
             </tr>
 
             <tr>
-                <td>Tora</td>
+                <th>Tora</th>
                 <td>Pick One Item</td>
                 <td>Enchanted Item</td>
                 <td>Gem Experience</td>
@@ -178,7 +211,7 @@
             </tr>
 
             <tr>
-                <td>Vagan</td>
+                <th>Vagan</th>
                 <td>Legion Splinters</td>
                 <td>Incubators</td>
                 <td>Legion Scarabs</td>
@@ -186,7 +219,7 @@
 
             </tr>
             <tr>
-                <td>Vorici</td>
+                <th>Vorici</th>
                 <td>Quality Gems</td>
                 <td>Socket Currency</td>
                 <td>White Sockets</td>
@@ -195,6 +228,12 @@
             </tr>
 
         </table>
+
+        <p>
+
+            <br>
+
+        </p>
 
     </div>
 
