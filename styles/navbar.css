@@ -16,17 +16,20 @@
 }
 /* 
 
-  <div class="navbar">
+ 
 
-    <span class="navbarthing">
-      PoECheatSheet
-    </span>
+    <div class="navbar">
 
+        <span class="navbarthing">
+            PoECheatSheet
+        </span>
 
-    <button onclick="location.href='./index.html'"> Home</button>
+        <button onclick="location.href='./index.html'"> Home</button>
         <button onclick="location.href='./lab.html'">Lab</button>
         <button onclick="location.href='./leveling.html'">Leveling</button>
         <button onclick="location.href='./syndicate.html'">Syndicate</button>
+        <button onclick="location.href='./delve.html'">Delve </button>
         <button onclick="location.href='./help.html'"> Help Me </button>
-  </div>
+    </div>
+    </div>
 */
