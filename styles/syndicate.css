@@ -1,0 +1,49 @@
+.images {
+    text-align: center;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.syndicate-button {
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6vh;
+    /*min-width: 14vw;*/
+    /* Make button unselectable by dragging around it*/
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.min-14 {
+    min-width: 14vw;
+}
+
+.button-image {
+    display: inline;
+}
+
+.button-text {
+    font-family: 'Made in China Regular', Arial, sans-serif;
+    font-size: 4em;
+}
+
+.syndicate-button:focus {
+    background-color: #6f3188 !important;
+    color: #ffffff;
+    /* Remove blue area surrounding button on click */
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.inline-block {
+    display: inline-block
+}
