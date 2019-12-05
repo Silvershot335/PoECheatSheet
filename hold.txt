@@ -1,0 +1,7 @@
+https://discordapp.com/api/guilds/618550292803354645/widget.json
+
+
+618550292803354645
+
+
+<iframe src="https://discordapp.com/widget?id=618550292803354645&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
