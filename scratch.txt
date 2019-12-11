@@ -1,0 +1,20 @@
+<input type="number" id="armor" placeholder="armor">
+<button id="armorButton">Calculate!</button>
+
+window.addEventListener('DOMContentLoaded', contentLoaded);
+
+
+function contentLoaded() {
+    const armorButton = document.getElementById('armorButton');
+    armorButton.addEventListener('click', calculateArmor);
+}
+
+function calculateArmor() {
+    const armorTextBox = document.getElementById('armor');
+    const armorValue = armorTextBox.value;
+    console.log(armorText);
+
+
+    2394.64570814
+}
+

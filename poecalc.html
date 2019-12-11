@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="Tm1PQWECHXl9LMDbqMh-3xh-y-qtCpIj15t1S1kDEHQ" />
+  <title>THE BLIGHT</title>
+  <!--  <link rel="stylesheet" href="./styles/lab.css">*/ -->
+  <link rel="stylesheet" href="./styles/button.css">
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <meta charset="utf-8">
+
+  <script>
+    window.addEventListener('DOMContentLoaded', contentLoaded);
+
+
+    function contentLoaded() {
+      const armorButton = document.getElementById('armorButton');
+      armorButton.addEventListener('click', displayArmor);
+      const evasionButton = document.getElementById('evasionButton')
+      evasionButton.addEventListener('click', displayEvasion);
+    }
+
+    function calculateArmor(armorValue) {
+      // do math
+      // dr = (int(armor) / (int(armor) + (10 * 1000)))
+      // armor = armorValue
+      
+
+      return armorValue / (armorValue + (10 * 1000));
+    }
+
+    function calculateEvasion(evasionValue, dodgeValue) {
+      console.log(evasionValue, dodgeValue);
+
+      const dc1 = Number('.' + dodgeValue);
+      console.log(dc1);
+      const part1 = (538);
+      const part2 = (evasionValue * .25)
+      const exponent = (Math.pow(part2, .8));
+      console.log('part1', part1);
+      console.log('exponent', exponent);
+      const ec = part1 / (538 + exponent);
+      const cp1 = ec;
+      const cp2 = 1 - (dc1);
+      const cpa = 1 - (cp1 * cp2);
+      return "Chance to prevent hits: " + (cpa * 100).toFixed(2) + "%";
+    }
+
+    function displayArmor() {
+        const armorTextBox = document.getElementById('armor');
+        const armorValue = armorTextBox.value;
+        const armorResultTag = document.getElementById('armorResult');
+        armorResultTag.innerText = calculateArmor(Number(armorValue));
+        armorResultTag.style.display = "block";
+    }
+
+    function displayEvasion() {
+      const evasionTextBox = document.getElementById('evasion');
+      const dodgeTextBox = document.getElementById('dodge');
+      const evasionValue = evasionTextBox.value;
+      const dodgeValue = dodgeTextBox.value;
+      const evasionResultTag = document.getElementById('evasionResult');
+      evasionResultTag.innerText = calculateEvasion(Number(evasionValue), Number(dodgeValue))
+      evasionResultTag.style.display = "block";
+    }
+  </script>
+  <style>
+    body {
+      background: url(https://web.poecdn.com/image/layout/blight-bg.jpg?1568172500905);
+      background-color: black;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+    }
+
+    .h1 {
+      font-weight: bolder;
+      font-size: 45px;
+      color: #2a2ad8;
+      text-align: center;
+      margin-top: 4vh;
+    }
+
+    .box {
+      background: transparent;
+      border: 15px solid rgba(32, 32, 32, 0);
+      padding: 4vw;
+      margin-left: 20vw;
+      text-align: center;
+      font-size: 25px;
+      padding-top: 10px;
+      width: 50vw;
+      height: 100vh;
+    }
+
+    .thick {
+      font-weight: bolder;
+      font-size: 45px;
+      color: white
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="navbar">
+
+    <span class="navbarthing">
+      PoECheatSheet
+    </span>
+
+    <button onclick="location.href='./index.html'"> Home</button>
+    <button onclick="location.href='./lab.html'">Lab</button>
+    <button onclick="location.href='./leveling.html'">Leveling</button>
+    <button onclick="location.href='./syndicate.html'">Syndicate</button>
+    <button onclick="location.href='./fossils.html'">Fossils </button>
+    <button onclick="location.href='./help.html'"> Help Me </button>
+    <button onclick="location.href='./poecalc.html'"> Calculate </button>
+  </div>
+
+<div  class="box">
+  
+  
+ <p> <input type="number" id="armor" placeholder="Armor Value">
+  <button id="armorButton">Calculate!</button>
+</p>
+<p> 
+  <input type="number" id="evasion" placeholder="Evasion Value">
+  <input type="number" id="dodge" placeholder="Dodge Value">
+  <button id="evasionButton">Calculate!</button>
+</p>
+  
+  <h1 id="armorResult" style="display: none"></h1>
+  <h1 id="evasionResult" style="display: none"></h1>
+  
+</div>
+</body>
