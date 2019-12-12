@@ -44,7 +44,7 @@
       const cp1 = ec;
       const cp2 = 1 - (dc1);
       const cpa = 1 - (cp1 * cp2);
-      return "Chance to prevent attacks: " + (cpa * 100).toFixed(2) + "%";
+      return "Your Chance to Prevent Attacks is: " + (cpa * 100).toFixed(2) + "%";
     }
 
     function displayArmor() {
@@ -82,11 +82,18 @@
     }
 
     .answer {
-      font-weight: bold;
-      font-size: 30px;
+      font-weight: bolder;
+      font-size: 80px;
       color: rgb(86, 207, 255);
       text-align: left;
 
+    }
+
+    .hdr {
+      font-size: 35px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
     }
 
     .box {
@@ -106,11 +113,11 @@
       border: 0px solid (32, 32, 32, 0);
       padding: 0vw;
       margin-left: 10vw;
-      text-align: left;
+      text-align: center;
       font-size: 25px;
       padding-top: 13vh;
       width: 40vw;
-      height: 100vh;
+      height: 20vh;
       float: left;
       
       
@@ -124,8 +131,8 @@
       text-align: left;
       font-size: 25px;
       padding-top: 10vh;
-      width: 35vw;
-      height: 100vh;
+      width: 40vw;
+      height: 20vh;
       float: right;
       color: tomato;
 
@@ -135,6 +142,19 @@
       font-weight: bolder;
       font-size: 45px;
       color: white
+    }
+
+    .return {
+      background: transparent;
+      border: 0px;
+      padding: 0vw;
+      text-align: center;
+      font-size: 40px;
+      padding-top: 45vh;
+      width: 100vw;
+      height: 20vh;
+      color: tomato;
+      float: none;
     }
   </style>
 
@@ -148,8 +168,6 @@
       PoECheatSheet
     </span>
 
-
-
     <button onclick="location.href='./index.html'"> Home</button>
     <button onclick="location.href='./lab.html'">Lab</button>
     <button onclick="location.href='./leveling.html'">Leveling</button>
@@ -159,37 +177,46 @@
     <button onclick="location.href='./poecalc.html'"> Calculate </button>
   </div>
   
+  
+  <div class="left">
 
-<div class="left">
-    Calculate your stats!
-<br>
-
-<br>
-  <ul> <li>Find your Physical Damage Reduction.</li>
-  <br>
+    <div class="hdr"> 
+      Calculate your stats!
+    </div>
+    
+    <br>
+    <br>
+    Find your Physical Damage Reduction.
+    <br>
+    <br>
+    Find your Chance to Prevent Attacks.
+  </div>
   
   
-  <li>Find your Chance to Prevent Attacks.</li>
-</ul>
-</div>
+  <div  class="right">
+    <br>
+    <br>
+    <br>
+    <p> <input type="number" id="armor" placeholder="Armor Value">
+      <button id="armorButton">Calculate!</button>
+    </p>
+    
+    <!--<answer id="armorResult" style="display: none"></answer>-->
+    
+    <p> 
+      <input type="number" id="evasion" placeholder="Evasion Value">
+      <input type="number" id="dodge" placeholder="Dodge Value">
+      <button id="evasionButton">Calculate!</button>
+    </p>
+    <br>
+    <!--<answer id="evasionResult" style="display: none"></answer>-->
+    
+    
+  </div>
+  <div class="return">
 
-<div  class="right">
-  <br>
-  <br>
-  <br>
- <p> <input type="number" id="armor" placeholder="Armor Value">
-  <button id="armorButton">Calculate!</button>
-</p>
-
-<answer id="armorResult" style="display: none"></answer>
-
-<p> 
-  <input type="number" id="evasion" placeholder="Evasion Value">
-  <input type="number" id="dodge" placeholder="Dodge Value">
-  <button id="evasionButton">Calculate!</button>
-</p>
- <br>
-  <answer id="evasionResult" style="display: none"></answer>
+      <answer id="armorResult" style="display: none"></answer>
   
-</div>
+      <answer id="evasionResult" style="display: none"></answer>
+  </div>
 </body>
