@@ -24,7 +24,7 @@
       // do math
       // dr = (int(armor) / (int(armor) + (10 * 1000)))
       // armor = armorValue
-      
+
 
       const reduction = armorValue / (armorValue + (10 * 1000));
       return "Your Physical Damage Reduction is: " + (reduction * 100).toFixed(2) + "%";
@@ -48,11 +48,11 @@
     }
 
     function displayArmor() {
-        const armorTextBox = document.getElementById('armor');
-        const armorValue = armorTextBox.value;
-        const armorResultTag = document.getElementById('armorResult');
-        armorResultTag.innerText = calculateArmor(Number(armorValue));
-        armorResultTag.style.display = "block";
+      const armorTextBox = document.getElementById('armor');
+      const armorValue = armorTextBox.value;
+      const armorResultTag = document.getElementById('armorResult');
+      armorResultTag.innerText = calculateArmor(Number(armorValue));
+      armorResultTag.style.display = "block";
     }
 
     function displayEvasion() {
@@ -78,7 +78,7 @@
       font-size: 45px;
       color: #2a2ad8;
       text-align: center;
-      margin-top: 4vh;
+      margin-top: 10vh;
     }
 
     .answer {
@@ -108,7 +108,7 @@
       height: 100vh;
     }
 
-    .left{
+    .left {
       background: transparent;
       border: 0px solid (32, 32, 32, 0);
       padding: 0vw;
@@ -119,11 +119,11 @@
       width: 40vw;
       height: 20vh;
       float: left;
-      
-      
+
+
     }
 
-    .right{
+    .right {
       background: transparent;
       border: 0px solid (32, 32, 32, 0);
       padding: 0vw;
@@ -151,7 +151,7 @@
       text-align: center;
       font-size: 40px;
       padding-top: 45vh;
-      width: 100vw;
+      width: 99vw;
       height: 20vh;
       color: tomato;
       float: none;
@@ -176,47 +176,48 @@
     <button onclick="location.href='./help.html'"> Help Me </button>
     <button onclick="location.href='./poecalc.html'"> Calculate </button>
   </div>
-  
-  
+
+  <div class="h1">
+
+    <img src="./images/calculate.png">
+  </div>
+
+
   <div class="left">
 
-    <div class="hdr"> 
-      Calculate your stats!
+    <div class="hdr">
+     
     </div>
     
-    <br>
-    <br>
     Find your Physical Damage Reduction.
     <br>
     <br>
     Find your Chance to Prevent Attacks.
   </div>
-  
-  
-  <div  class="right">
-    <br>
-    <br>
-    <br>
+
+
+  <div class="right">
+    
     <p> <input type="number" id="armor" placeholder="Armor Value">
       <button id="armorButton">Calculate!</button>
     </p>
-    
+
     <!--<answer id="armorResult" style="display: none"></answer>-->
-    
-    <p> 
+
+    <p>
       <input type="number" id="evasion" placeholder="Evasion Value">
       <input type="number" id="dodge" placeholder="Dodge Value">
       <button id="evasionButton">Calculate!</button>
     </p>
     <br>
     <!--<answer id="evasionResult" style="display: none"></answer>-->
-    
-    
+
+
   </div>
   <div class="return">
 
-      <answer id="armorResult" style="display: none"></answer>
-  
-      <answer id="evasionResult" style="display: none"></answer>
+    <answer id="armorResult" style="display: none"></answer>
+
+    <answer id="evasionResult" style="display: none"></answer>
   </div>
 </body>

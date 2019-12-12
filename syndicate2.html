@@ -7,103 +7,151 @@
     <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/syndicate.css">
-    <link rel="stylesheet" href="styles/fonts/made_in_china/font.css">
+    
     <style>
         body {
             background: darkgrey url(./images/beanstalk-dark.png);
+        }
+
+        .button2 {
+            /* default for <button>, but useful for <a> */
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            
+
+            /* invisible border (will be colored on hover/focus) */
+            border: solid 1px transparent;
+            border-radius: 2px;
+
+            /* size comes from text & padding (no width/height) */
+            padding: 0.4em 0.8em;
+
+            /* make sure colors have enough contrast! */
+            color: #ffffff;
+            background-color: #b46d2b;
+        }
+
+
+        .button2:hover {
+            cursor: pointer;
+            border-color: currentColor;
+            background-color: #ffbd2d;
+        }
+
+        .button2:focus {
+            color: #e22a43;
+            border-color: currentColor;
+            background-color: #ffffff;
         }
     </style>
     <script src="./scripts/syndicate.js"></script>
 </head>
 
 <body>
-<div class="navbar">
+    <div class="navbar">
 
         <span class="navbarthing">
             PoECheatSheet
         </span>
 
-    <button onclick="location.href='./index.html'"> Home</button>
-    <button onclick="location.href='./lab.html'">Lab</button>
-    <button onclick="location.href='./leveling.html'">Leveling</button>
-    <button onclick="location.href='./syndicate.html'">Syndicate</button>
-    <button onclick="location.href='./fossils.html'">Fossils</button>
-    <button onclick="location.href='./help.html'"> Help Me</button>
-</div>
+        <button onclick="location.href='./index.html'"> Home</button>
+        <button onclick="location.href='./lab.html'">Lab</button>
+        <button onclick="location.href='./leveling.html'">Leveling</button>
+        <button onclick="location.href='./syndicate.html'">Syndicate</button>
+        <button onclick="location.href='./fossils.html'">Fossils</button>
+        <button onclick="location.href='./help.html'"> Help Me</button>
+    </div>
 
-<div class="flex-container">
-    <div class="images" id="selectedMembers">
-        <div class="syndicate-button">
-            <div class="button-image inline-block" id="member1">&nbsp;</div>
-        </div>
-        <div class="syndicate-button">
-            <div class="button-image inline-block" id="member2">&nbsp;</div>
-        </div>
-        <div class="syndicate-button">
-            <div class="button-image inline-block" id="member3">&nbsp;</div>
-        </div>
-        <div class="syndicate-button">
-            <div class="button-image inline-block" id="member4">&nbsp;</div>
+    <div class="box">
+
+        
+        
+        
+        <div class="flex-container">
+            <div class="images" id="selectedMembers">
+                <div class="syndicate-button">
+                    <div class="button-image inline-block" id="member1">&nbsp;</div>
+                </div>
+              <!---->  <div class="syndicate-button">
+                    <div class="button-image inline-block" id="member2">&nbsp;</div>
+                </div>
+                <div class="syndicate-button">
+                    <div class="button-image inline-block" id="member3">&nbsp;</div>
+                </div>
+                <div class="syndicate-button">
+                <div class="button-image inline-block" id="member4">&nbsp;</div>
+            </div>
         </div>
     </div>
-</div>
+    
+    <div class="flex-container">
+        <div id="images" class="images">
+            <button class="button2" title="Aisling">
+                <span class="button-text">Aisling</span>
+            </button>
+            <button class="button2" title="Cameria">
+                <span class="button-text">Cameria</span>
+            </button>
+            <button class="button2" title="Elreon">
+                <span class="button-text">Elreon</span>
+            </button>
+            <button class="button2" title="Gravicius">
+                <span class="button-text">Gravicius</span>
+            </button>
 
-<div class="flex-container">
-    <div id="images" class="images">
-        <button class="syndicate-button min-14" title="Aisling">
-            <span class="button-text">Aisling</span>
-        </button>
-        <button class="syndicate-button min-14" title="Cameria">
-            <span class="button-text">Cameria</span>
-        </button>
-        <button class="syndicate-button min-14" title="Elreon">
-            <span class="button-text">Elreon</span>
-        </button>
-        <button class="syndicate-button min-14" title="Gravicius">
-            <span class="button-text">Gravicius</span>
-        </button>
+            <br>
+            <br>
+            
+            <button class="button2" title="Guff">
+                <span class="button-text">Guff</span>
+            </button>
+            
+            <button class="button2" title="Haku">
+                <span class="button-text">Haku</span>
+            </button>
+            <button class="button2" title="Hillock">
+                <span class="button-text">Hillock</span>
+            </button>
+            <button class="button2" title="It that Fled">
+                <span class="button-text">It that Fled</span>
+            </button>
 
-        <button class="syndicate-button min-14" title="Guff">
-            <span class="button-text">Guff</span>
-        </button>
-        <button class="syndicate-button min-14" title="Haku">
-            <span class="button-text">Haku</span>
-        </button>
-        <button class="syndicate-button min-14" title="Hillock">
-            <span class="button-text">Hillock</span>
-        </button>
-        <button class="syndicate-button min-14" title="It that Fled">
-            <span class="button-text">It that Fled</span>
-        </button>
+            <br>
+            <br>
+            
+            <button class="button2" title="Janus">
+                <span class="button-text">Janus</span>
+            </button>
+            <button class="button2" title="Jorgin">
+                <span class="button-text">Jorgin</span>
+            </button>
+            <button class="button2" title="Korell">
+                <span class="button-text">Korell</span>
+            </button>
+            <button class="button2" title="Leo">
+                <span class="button-text">Leo</span>
+            </button>
 
-        <button class="syndicate-button min-14" title="Janus">
-            <span class="button-text">Janus</span>
-        </button>
-        <button class="syndicate-button min-14" title="Jorgin">
-            <span class="button-text">Jorgin</span>
-        </button>
-        <button class="syndicate-button min-14" title="Korell">
-            <span class="button-text">Korell</span>
-        </button>
-        <button class="syndicate-button min-14" title="Leo">
-            <span class="button-text">Leo</span>
-        </button>
-
-        <button class="syndicate-button min-14" title="Riker">
-            <span class="button-text">Riker</span>
-        </button>
-        <button class="syndicate-button min-14" title="Rin">
-            <span class="button-text">Rin</span>
-        </button>
-        <button class="syndicate-button min-14" title="Tora">
-            <span class="button-text">Tora</span>
-        </button>
-        <button class="syndicate-button min-14" title="Vagan">
-            <span class="button-text">Vagan</span>
-        </button>
-        <button class="syndicate-button min-14" title="Vorici">
-            <span class="button-text">Vorici</span>
-        </button>
+            <br>
+            <br>
+            
+            <button class="button2" title="Riker">
+                <span class="button-text">Riker</span>
+            </button>
+            <button class="button2" title="Rin">
+                <span class="button-text">Rin</span>
+            </button>
+            <button class="button2" title="Tora">
+                <span class="button-text">Tora</span>
+            </button>
+            <button class="button2" title="Vagan">
+                <span class="button-text">Vagan</span>
+            </button>
+            <button class="button2" title="Vorici">
+                <span class="button-text">Vorici</span>
+            </button>
+        </div>
     </div>
 </div>
 </body>

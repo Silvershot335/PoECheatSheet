@@ -43,7 +43,7 @@ function updateDOM() {
                 `<div class="button-image inline-block" id="member${ i }">&nbsp;</div>\n</span>`);
         } else {
             domToRender.unshift('<span class="syndicate-button">\n' +
-                `<img class="button-image inline-block" id="member${ i }" src='./images/${ item }.jpg' alt='${ item }' title='${ item }'></span>`);
+                `<img class="button-image inline-block" id="member${ i }" src='./images/${ item }.png' alt='${ item }' title='${ item }'></span>`);
         }
     }
     let domString = '';
