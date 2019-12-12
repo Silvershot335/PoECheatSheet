@@ -3,7 +3,7 @@
 
 <head>
   <meta name="google-site-verification" content="Tm1PQWECHXl9LMDbqMh-3xh-y-qtCpIj15t1S1kDEHQ" />
-  <title>THE BLIGHT</title>
+  <title>Calculations</title>
   <!--  <link rel="stylesheet" href="./styles/lab.css">*/ -->
   <link rel="stylesheet" href="./styles/button.css">
   <link rel="stylesheet" href="./styles/navbar.css">
@@ -26,7 +26,8 @@
       // armor = armorValue
       
 
-      return armorValue / (armorValue + (10 * 1000));
+      const reduction = armorValue / (armorValue + (10 * 1000));
+      return "Your Physical Damage Reduction is: " + (reduction * 100).toFixed(2) + "%";
     }
 
     function calculateEvasion(evasionValue, dodgeValue) {
@@ -43,7 +44,7 @@
       const cp1 = ec;
       const cp2 = 1 - (dc1);
       const cpa = 1 - (cp1 * cp2);
-      return "Chance to prevent hits: " + (cpa * 100).toFixed(2) + "%";
+      return "Chance to prevent attacks: " + (cpa * 100).toFixed(2) + "%";
     }
 
     function displayArmor() {
@@ -66,7 +67,7 @@
   </script>
   <style>
     body {
-      background: url(https://web.poecdn.com/image/layout/blight-bg.jpg?1568172500905);
+      background: url(./images/beanstalk-dark.png);
       background-color: black;
       color: rgb(255, 255, 255);
       font-weight: bold;
@@ -80,6 +81,14 @@
       margin-top: 4vh;
     }
 
+    .answer {
+      font-weight: bold;
+      font-size: 30px;
+      color: rgb(86, 207, 255);
+      text-align: left;
+
+    }
+
     .box {
       background: transparent;
       border: 15px solid rgba(32, 32, 32, 0);
@@ -90,6 +99,36 @@
       padding-top: 10px;
       width: 50vw;
       height: 100vh;
+    }
+
+    .left{
+      background: transparent;
+      border: 0px solid (32, 32, 32, 0);
+      padding: 0vw;
+      margin-left: 10vw;
+      text-align: left;
+      font-size: 25px;
+      padding-top: 13vh;
+      width: 40vw;
+      height: 100vh;
+      float: left;
+      
+      
+    }
+
+    .right{
+      background: transparent;
+      border: 0px solid (32, 32, 32, 0);
+      padding: 0vw;
+      margin-left: 5vw;
+      text-align: left;
+      font-size: 25px;
+      padding-top: 10vh;
+      width: 35vw;
+      height: 100vh;
+      float: right;
+      color: tomato;
+
     }
 
     .thick {
@@ -109,6 +148,8 @@
       PoECheatSheet
     </span>
 
+
+
     <button onclick="location.href='./index.html'"> Home</button>
     <button onclick="location.href='./lab.html'">Lab</button>
     <button onclick="location.href='./leveling.html'">Leveling</button>
@@ -117,21 +158,38 @@
     <button onclick="location.href='./help.html'"> Help Me </button>
     <button onclick="location.href='./poecalc.html'"> Calculate </button>
   </div>
+  
 
-<div  class="box">
+<div class="left">
+    Calculate your stats!
+<br>
+
+<br>
+  <ul> <li>Find your Physical Damage Reduction.</li>
+  <br>
   
   
+  <li>Find your Chance to Prevent Attacks.</li>
+</ul>
+</div>
+
+<div  class="right">
+  <br>
+  <br>
+  <br>
  <p> <input type="number" id="armor" placeholder="Armor Value">
   <button id="armorButton">Calculate!</button>
 </p>
+
+<answer id="armorResult" style="display: none"></answer>
+
 <p> 
   <input type="number" id="evasion" placeholder="Evasion Value">
   <input type="number" id="dodge" placeholder="Dodge Value">
   <button id="evasionButton">Calculate!</button>
 </p>
-  
-  <h1 id="armorResult" style="display: none"></h1>
-  <h1 id="evasionResult" style="display: none"></h1>
+ <br>
+  <answer id="evasionResult" style="display: none"></answer>
   
 </div>
 </body>
