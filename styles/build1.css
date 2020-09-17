@@ -1,0 +1,45 @@
+.left {
+    background: transparent;
+    border: 0px solid (32, 32, 32, 0);
+    padding: 0vw;
+    margin-left: 10vw;
+    margin-top: 20vh;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 13vh;
+    padding-bottom: 5vh;
+    width: 30vw;
+    height: 20vh;
+    float: left;
+}
+
+.right {
+    background: transparent;
+    border: 0px solid (32, 32, 32, 0);
+    padding-left: 0vw;
+    margin-left: 0vw;
+    margin-top: 20vh;
+    padding-bottom: 5vh;
+    margin-right: 10vw;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 13vh;
+    width: 30vw;
+    height: 20vh;
+    float: right;
+}
+
+.box{
+    color: lightgray;
+}
+
+.football {
+    height: 10px;
+    align-content: center;
+    margin-top: 25vh;
+    margin-left: 42vw;
+    margin-right: 40vw;
+    font
+}
