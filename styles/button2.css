@@ -1,0 +1,30 @@
+button {
+  /* default for <button>, but useful for <a> */
+display: inline-block;
+text-align: center;
+text-decoration: none;
+min-width: 100px;
+
+/* invisible border (will be colored on hover/focus) */
+border: solid 1px transparent;
+border-radius: 2px;
+
+/* size comes from text & padding (no width/height) */
+padding: 0.4em 0.8em;
+margin: 10px;
+
+/* make sure colors have enough contrast! */
+color: #ffffff;
+background-color: #6f3188;
+}
+
+button:hover{
+  cursor: pointer;
+  border-color: currentColor;
+  background-color: #9555af;
+}
+button:focus {
+  color: #9555af;
+  border-color: currentColor;
+  background-color: #ffffff;
+}
